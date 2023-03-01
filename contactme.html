@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<head>
+	<title>My Website</title>
+	<style>
+		html {
+			background-color: #fefdfd66;
+		}
+		body {
+			text-align: center;
+		}
+		h1 {
+			font-size: 55px;
+		}
+		p {
+			font-size: 45px;
+		}
+	</style>
+<style>
+    nav {
+      background-color: #111111;
+      padding: 10px;
+    }
+    
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    nav li {
+      margin: 0 10px;
+    }
+    
+    nav a {
+      color: #bebebe;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      border-radius: 5px;
+      display: block; 
+    }
+    
+    nav a:hover {
+      background-color: #555;
+      color: #f0f0f0;
+    }
+    
+    nav img {
+      height: 80px;
+      margin-right: 20px;
+    }
+    
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      nav li {
+        margin: 5px 0;
+      }
+      nav a {
+        padding: 10px;
+      }
+      nav img {
+        height: 60px;
+        margin-right: 0;
+        margin-bottom: 10px;
+      }
+    }
+    </style>
+    
+    <nav>
+      <ul>
+        <li><img src="https://media.istockphoto.com/id/1141246240/vector/computer-repair-digital-computer-logo-symbol-repair-service-vector.jpg?s=612x612&w=0&k=20&c=oU9ZzJKodpyMCyp4bXULxpZnBd72jPDAYjDb9fuPQVQ=" alt="Logo"></li>
+        <li><a href="homepage.html">Home page</a></li>
+        <li><a href="aboutme.html">About me</a></li>
+        <li><a href="contactme.html">Contact me</a></li>
+        <li><a href="#work">My work</a></li>
+        <li><a href="store.html">My store</a></li>
+      </ul>
+    </nav>
+
+    <html>
+<head>
+	<title>Contact Me Form</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		.form-group {
+			margin-bottom: 20px;
+		}
+
+		label {
+			display: block;
+			margin-bottom: 5px;
+			font-weight: bold;
+		}
+
+		input, textarea {
+			padding: 10px;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+			width: 100%;
+		}
+
+		textarea {
+			height: 150px;
+		}
+
+		button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		button:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+</head>
+<body>
+	<h1>Contact Me Form</h1>
+    <p>I'd love to hear from you!</p>
+	<form action="submit-form.php" method="post">
+		<div class="form-group">
+			<label for="name">Name</label>
+			<input type="text" id="name" name="name" placeholder="Enter your name" required>
+		</div>
+		<div class="form-group">
+			<label for="email">Email</label>
+			<input type="email" id="email" name="email" placeholder="Enter your email" required>
+		</div>
+		<div class="form-group">
+			<label for="subject">Subject</label>
+			<input type="text" id="subject" name="subject" placeholder="Enter the subject" required>
+		</div>
+		<div class="form-group">
+			<label for="message">Message</label>
+			<textarea id="message" name="message" placeholder="Enter your message" required></textarea>
+		</div>
+		<button type="submit">Submit</button>
+	</form>
+</body>
+</html>
